@@ -12,7 +12,7 @@ export default class extends PureComponent {
     const { onSelect, selectedId } = this.props;
 
     return (
-      <Sticky offset={80}>
+      <Sticky offset={120}>
         <Container center>
           <div className="categories">
             {categoriesShort.map((_, index) => {
