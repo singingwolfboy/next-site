@@ -14,7 +14,7 @@ import SocialMeta from '../../components/social-meta';
 import { Sidebar, SidebarMobile, Post, Category, Heading } from '../../components/sidebar';
 import Page from '../../components/page';
 import Sticky from '../../components/sticky';
-import { useIsMobile } from '../../components/media-query.js';
+import { useIsMobile } from '../../components/media-query';
 
 function getCategoryPath(routes) {
   const route = routes.find(r => r.path);
