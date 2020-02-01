@@ -1,13 +1,12 @@
 import Head from 'next/head';
 import Router from 'next/router';
 import { trackPageview } from '../lib/analytics';
-import { withMediaQuery } from './media-query';
 
 Router.events.on('routeChangeComplete', url => {
   trackPageview(url);
 });
 
-function PageContainer({ title, description, children }) {
+export default function PageContainer({ title, description, children }) {
   return (
     <div>
       <Head>
@@ -376,5 +375,3 @@ function PageContainer({ title, description, children }) {
     </div>
   );
 }
-
-export default withMediaQuery(PageContainer);
